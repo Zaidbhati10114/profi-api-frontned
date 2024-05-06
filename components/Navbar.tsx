@@ -1,4 +1,4 @@
-import { Heart } from "lucide-react";
+import { Heart, Webhook } from "lucide-react";
 import Link from "next/link";
 import { buttonVariants } from "./ui/button";
 
@@ -11,24 +11,15 @@ const Navbar = () => {
             href="/"
             className="relative sm:absolute inset-y-0 left-0 flex items-center font-semibold"
           >
-            <img src="/swear-emoji.png" className="h-6 w-6 mr-1.5" />
-            ProfanityAPI
+            <Webhook className="w-6 h-6 mr-1" />
+            ProfanityGuard
           </Link>
 
           {/* placeholder */}
           <div className="hidden sm:block invisible">ProfanityAPI</div>
 
-          <div className="hidden sm:flex items-center gap-6">
-            <Link className="hover:underline" href="#video-demo">
-              Video Demo
-            </Link>
-            <Link className="hover:underline" href="#api">
-              API
-            </Link>
-          </div>
-
           <Link
-            href="https://github.com/joschan21/profanity.dev"
+            href="https://github.com/Zaidbhati10114/profi-api-frontned"
             target="_blank"
             referrerPolicy="no-referrer"
             className={buttonVariants({ variant: "secondary" })}

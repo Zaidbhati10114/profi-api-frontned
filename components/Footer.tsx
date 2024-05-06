@@ -18,22 +18,22 @@ const Footer = () => {
             A fun project that turned out much better than I expected :D
           </p>
           <p className="max-w-md text-sm text-gray-500">
-            Page design inspiration from{" "}
+            Developed By{" "}
             <a
-              className="underline"
+              className="underline font-semibold"
               href="https://poopup.co/"
               target="_blank"
               rel="noreferrer"
             >
-              poopup
+              Zaid
             </a>
           </p>
           <p className="text-sm leading-5 text-gray-400">
-            © {new Date().getFullYear()} ProfanityAPI
+            © {new Date().getFullYear()} ProfanityGuard
           </p>
           <div className="flex items-center space-x-3">
             <a
-              href="https://x.com/@joshtriedcoding"
+              href="https://twitter.com/Zaidbhati4"
               target="_blank"
               rel="noreferrer"
               className="group rounded-full border border-gray-200 p-2 transition-colors hover:bg-gray-100"
@@ -42,23 +42,13 @@ const Footer = () => {
               <Twitter className="h-4 w-4 text-gray-600 transition-colors group-hover:text-black" />
             </a>
             <a
-              href="https://github.com/joschan21/profanity.dev/"
+              href="https://github.com/Zaidbhati10114"
               target="_blank"
               rel="noreferrer"
               className="group rounded-full border border-gray-200 p-2 transition-colors hover:bg-gray-100"
             >
               <span className="sr-only">Github</span>
               <Github className="h-4 w-4 text-gray-600 transition-colors group-hover:text-black" />
-            </a>
-
-            <a
-              href="https://www.youtube.com/@joshtriedcoding"
-              target="_blank"
-              rel="noreferrer"
-              className="group rounded-full border border-gray-200 p-2 transition-colors hover:bg-gray-100"
-            >
-              <span className="sr-only">YouTube</span>
-              <Youtube className="h-4 w-4 text-gray-600 transition-colors group-hover:text-[#ff0000]" />
             </a>
           </div>
         </div>

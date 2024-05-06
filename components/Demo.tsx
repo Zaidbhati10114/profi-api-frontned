@@ -6,6 +6,7 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Icons } from "./Icons";
 import { checkProfanity } from "@/app/actions";
+import { Loader2 } from "lucide-react";
 
 const Demo = () => {
   const [message, setMessage] = useState<string>(
@@ -23,6 +24,10 @@ const Demo = () => {
   });
 
   const successData = data && !("error" in data) ? data : undefined;
+
+  const Loading = () => {
+    return <Loader2 className="mr-2 h-4 w-4 animate-spin" />;
+  };
 
   return (
     <div className="flex flex-col gap-5 items-center">
@@ -52,6 +57,7 @@ const Demo = () => {
             className="h-9 w-full sm:w-fit"
             onClick={() => mutate({ message })}
           >
+            {isPending ? <Loading /> : null}
             Profanity check
           </Button>
         </div>
